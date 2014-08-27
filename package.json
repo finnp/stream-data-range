@@ -1,6 +1,6 @@
 {
   "name": "stream-data-range",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Get the min and max value of piped attributes",
   "main": "index.js",
   "bin": {
