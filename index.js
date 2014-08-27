@@ -16,11 +16,12 @@ module.exports = function (cb) {
   function onRow(row) {
     for(attr in row) {
       var value = isNaN(Number(row[attr])) ? row[attr] : Number(row[attr])
+      
       if(metadata[attr]) {
         if(value < metadata[attr].min) {
           metadata[attr].min = value
         }
-        if(value > metadata[attr].min) {
+        if(value > metadata[attr].max) {
           metadata[attr].max = value
         }
       } else {
